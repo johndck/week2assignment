@@ -1,0 +1,59 @@
+/* Stylesheet for John Dick's portfolio page */
+
+/* Setting the default global styles across the page */
+
+/* color variables
+
+
+/* fonts to be used */
+
+/* Google fonts - Cardo
+/* Google fonts - Inter
+/* Google fonts - Menio */
+
+:root {
+  font-family: "Cardo", serif;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+
+  /* resetting everything in the browser */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(235, 235, 235, 1);
+}
+
+h1 {
+  font-family: "Cardo", serif;
+  font-size: 40px;
+  font-style: bold;
+}
+
+h2,
+.hero-subtitle {
+  font-family: "Cardo", serif;
+  font-size: 30px;
+}
+
+.hero-text {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  border: black 1px solid;
+  margin: 0 auto;
+}
+
+.top-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 60px;
+}
