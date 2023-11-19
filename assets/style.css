@@ -35,7 +35,7 @@ h1 {
 h2,
 .hero-subtitle {
   font-family: "Cardo", serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .hero-text {
@@ -50,14 +50,14 @@ h3 {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 56.875rem;
   margin: 0 auto;
+  padding: 0 0.3125rem 0 0.3125rem;
 }
 
 .top-banner {
   display: flex;
   flex-direction: row;
-  gap: 140px;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 130px;
@@ -193,7 +193,7 @@ h3 {
 
 .skill-wrap {
   align-self: end;
-  /* border: black 1px solid; */
+  /* border: black 1px solid;*/
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -205,6 +205,7 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  /* border: black 1px solid; */
 }
 
 /* Each skills line will be converted into flex to get the items into a row. */
@@ -267,4 +268,88 @@ h3 {
   cursor: pointer;
 }
 
+.version {
+  font-family: "Jet Brains Mono", monospace;
+  padding-bottom: 1rem;
+  font-size: 0.75rem;
+}
+
 /* Media queries to make the site responsive */
+
+@media screen and (max-width: 790px) {
+  /* Make the top banner responsive   */
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .profile-pic {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  h2,
+  .hero-subtitle {
+    font-size: 3rem;
+  }
+
+  /* My work section */
+
+  .work-display {
+    margin-top: 1.55rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+  }
+
+  /* about me */
+
+  .about-me-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .work-tag {
+    margin-right: 0.9rem;
+  }
+
+  .work-tag {
+    font-size: 1rem;
+    padding: 0.9rem;
+  }
+
+  .mission-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* Make the top banner responsive   */
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .top-banner {
+    padding: 0 0 30px 5px;
+  }
+
+  h2,
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .hero-text {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+}
