@@ -20,6 +20,13 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" text="css" href="./assets/style.css" />
 
     <title>This is John Dick's landing page</title>
@@ -40,11 +47,132 @@
       </div>
     </header>
     <main>
-      <div class="container hero">
+      <!-- here is the container section-->
+      <!-- added the CTA outside because the main container is a flex which makes the button stretch (query this later)-->
+
+      <section class="container hero">
         <h2>Digital Product Director & Builder</h2>
-        <p class="hero-subtitle">Based in Cambridge</p>
-        <p class="hero-text">A one-liner description of what you do.</p>
+        <h2><span class="title-blue">Based</span> in Cambridge</h2>
+        <p class="hero-text">
+          Lorem ipsum dolor sit <span class="title-blue">blue</span> amet
+          consectetur adipisicing elit. Incidunt corrupti
+          <span class="title-blue">reiciendis</span> totam sunt dolorum magnam
+          odio.
+        </p>
+      </section>
+      <div class="container hero-cta">
+        <a href="#" class="contact-btn">Contact</a>
       </div>
+
+      <!-- end of hero section-->
+
+      <!-- the work section -->
+
+      <section class="container work">
+        <!-- 2 x 2 grid section of content-->
+
+        <h2>My Work</h2>
+        <!-- set up the grid container work-display-->
+        <div class="work-display">
+          <!-- grid items denoted as work-card-->
+          <div class="work-card">
+            <!--large grey card-->
+            <div class="work-content">
+              <!--Img + content -->
+              <img
+                src="./assets/img/564x336-mft.jpg"
+                alt="image"
+                class="work-img"
+              />
+              <div class="work-explanation">
+                <!-- holding container for work description-->
+                <h3>Name of the project</h3>
+                <div class="tag-container">
+                  <p class="work-tag">Work Tag</p>
+                  <p class="work-tag">Work Tag2</p>
+                </div>
+
+                <p class="work-description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Beatae, eligendi culpa?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- next work-card -->
+
+          <div class="work-card">
+            <!--large grey card-->
+            <div class="work-content">
+              <!--Img + content -->
+              <img
+                src="./assets/img/564x336-mft.jpg"
+                alt="image"
+                class="work-img"
+              />
+              <div class="work-explanation">
+                <!-- holding container for work description-->
+                <h3>Work 1</h3>
+                <p class="work-tag">Work Tag</p>
+                <p class="work-tag">Work Tag2</p>
+                <p class="work-description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Beatae, eligendi culpa?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- next work-card -->
+
+          <div class="work-card">
+            <!--large grey card-->
+            <div class="work-content">
+              <!--Img + content -->
+              <img
+                src="./assets/img/564x336-mft.jpg"
+                alt="image"
+                class="work-img"
+              />
+              <div class="work-explanation">
+                <!-- holding container for work description-->
+                <h3>Work 1</h3>
+                <p class="work-tag">Work Tag</p>
+                <p class="work-tag">Work Tag2</p>
+                <p class="work-description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Beatae, eligendi culpa?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- next work-card -->
+
+          <div class="work-card">
+            <!--large grey card-->
+            <div class="work-content">
+              <!--Img + content -->
+              <img
+                src="./assets/img/564x336-mft.jpg"
+                alt="image"
+                class="work-img"
+              />
+              <div class="work-explanation">
+                <!-- holding container for work description-->
+                <h3>Work 1</h3>
+                <p class="work-tag">Work Tag</p>
+                <p class="work-tag">Work Tag2</p>
+                <p class="work-description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Beatae, eligendi culpa?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
