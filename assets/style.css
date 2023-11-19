@@ -35,13 +35,18 @@ h1 {
 h2,
 .hero-subtitle {
   font-family: "Cardo", serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .hero-text {
   font-family: "Cardo", serif;
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-family: "Cardo", serif;
+  font-size: 2rem;
 }
 
 .container {
@@ -56,7 +61,7 @@ h2,
   gap: 140px;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 100px;
+  margin-top: 130px;
   justify-content: space-between;
   padding: 0 0 30px 15px;
 }
@@ -152,4 +157,63 @@ h2,
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 0.3125rem;
+}
+
+/* Here is the CSS for the About me section */
+
+/* sets the section gap - need to check if I am consistently spacing the sections out & with I am using margin top for new section or margin bottom for old section */
+
+.about-me {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.about-me-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.about-me-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 0.5rem;
+}
+
+.about-summary {
+  width: 80%;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+/* Puts skill-wrap on bottom of grid reference */
+
+/* controls the vertical placement and is aligned to the bottom of the grid   */
+
+.skill-wrap {
+  align-self: end;
+  /* border: black 1px solid; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Holds the line of each skills and enables control of each skills line      */
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Each skills line will be converted into flex to get the items into a row. */
+
+.skills-line {
+  display: flex;
+}
+
+.work-tag {
+  margin-right: 0.3125rem;
 }
