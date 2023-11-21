@@ -563,33 +563,18 @@ h3 {
   }
 }
 
-/*
-
-@media screen and (max-width: 480px) {
-  /* Make the top banner responsive
-
-  h1 {
-    font-size: 2rem;
-    line-height: 4.3125rem;
-  }
-
-  .top-banner {
-    padding: 0 0 30px 5px;
-  }
-
-  h2,
-  .hero-subtitle {
-    font-size: 1.5rem;
-  }
-
-  .profile-pic {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .hero-text {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
+@media screen and (max-width: 400px) {
+  .hero-icon::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(./img/code.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    top: -1.9rem;
+    left: 22rem;
   }
 }
-*/
