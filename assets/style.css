@@ -563,7 +563,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 414px) {
   .hero-icon::after {
     content: "";
     width: 30px;
