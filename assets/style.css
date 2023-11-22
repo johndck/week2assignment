@@ -92,7 +92,7 @@ h2,
 /* check if this is being used */
 
 h3 {
-  font-family: "Cardo", serif;
+  font-family: "Gambarino-Regular", serif;
   font-size: 2rem;
 }
 
@@ -360,6 +360,10 @@ h3 {
   justify-content: space-between;
 }
 
+.footer-links {
+  color: rgba(20, 110, 246, 1);
+}
+
 .footer-links:link {
   text-decoration: none;
   cursor: pointer;
@@ -584,5 +588,122 @@ h3 {
     position: absolute;
     top: 3rem;
     left: 21.8rem;
+  }
+}
+
+/* CSS for really small screens */
+
+@media screen and (max-width: 385px) {
+  h1 {
+    font-size: 2.6875rem;
+    line-height: 2.9375;
+  }
+
+  .container {
+    max-width: 44rem;
+  }
+
+  .profile-pic {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .top-banner {
+    margin-top: 2rem;
+  }
+
+  h2,
+  .hero-subtitle {
+    font-size: 2rem;
+    line-height: 2.1875rem;
+  }
+
+  .hero {
+    margin-top: 1rem;
+  }
+
+  .hero-icon::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url(./img/code.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    top: 3rem;
+    left: 19rem;
+  }
+
+  .hero-cta {
+    margin-bottom: 4rem;
+  }
+
+  @media screen and (max-width: 325px) {
+    h1 {
+      font-size: 2.3125rem;
+      line-height: 2.5rem;
+    }
+
+    .container {
+      max-width: 41rem;
+    }
+
+    .hero-icon::after {
+      content: "";
+      width: 30px;
+      height: 30px;
+      background-image: url(./img/code.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: inline-block;
+      position: absolute;
+      top: 3rem;
+      left: 17.8rem;
+    }
+
+    .profile-pic {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .hero {
+      margin-top: 2rem;
+    }
+
+    h3 {
+      font-family: "Gambarino-Regular", serif;
+      font-size: 1.5rem;
+    }
+
+    .work-explanation {
+      align-items: unset;
+    }
+
+    .tag-container {
+      column-gap: 0.5rem;
+      row-gap: 0.5rem;
+    }
+
+    .tag-container .work-tag {
+      font-size: 0.6rem;
+      line-height: 0.7rem;
+      padding: 0.2rem;
+      margin-right: 0.2rem;
+    }
+
+    .skills-line .work-tag {
+      font-size: 0.65rem;
+    }
+
+    .footer {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+    }
   }
 }
