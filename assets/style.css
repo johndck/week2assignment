@@ -1,15 +1,5 @@
 /* Stylesheet for John Dick's portfolio page */
 
-/* Setting the default global styles across the page */
-
-/* color variables
-
-/* fonts to be used */
-
-/* From fontshare - Gambarino
-
-/* From Google fonts - Manrope */
-
 @font-face {
   font-family: "Gambarino-Regular";
   src: url("../fonts/gambarino/Gambarino-Regular.woff2") format("woff2"),
@@ -56,15 +46,26 @@
 }
 
 :root {
+  /* === CSS Variables === */
+
+  --sitebackground: rgba(235, 235, 235, 1);
+  --siteblue: rgba(20, 110, 246, 1);
+  --btnText: white;
+  --btnHover: orange;
+  --cardgrey: rgba(224, 224, 224, 1);
+  --tagtext: white;
+  --tagcolor: black;
+  --sitecontrastblue: rgba(191, 207, 233, 1);
+
+  background: var(--sitebackground);
   font-size: 16px;
-  background: rgba(235, 235, 235, 1);
-  /* resetting everything in the browser */
+  box-sizing: border-box;
 }
 
+/* resetting everything in the browser */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 h1 {
@@ -94,6 +95,7 @@ h2,
 h3 {
   font-family: "Gambarino-Regular", serif;
   font-size: 2rem;
+  color: pink;
 }
 
 .container {
@@ -144,7 +146,7 @@ h3 {
 }
 
 .hero .title-blue {
-  color: rgba(20, 110, 246, 1);
+  color: var(--siteblue);
 }
 
 .hero-cta {
@@ -153,8 +155,8 @@ h3 {
 }
 
 .contact-btn {
-  background-color: rgba(20, 110, 246, 1);
-  color: white;
+  background-color: var(--siteblue);
+  color: var(--btnText);
   font-family: "Manrope", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -166,14 +168,14 @@ h3 {
 }
 
 .contact-btn:hover {
-  background-color: orange;
+  background-color: var(--btnHover);
   color: white;
   padding: 12px 32px 12px 32px;
   border-radius: 12px;
 }
 
 .contact-btn:active {
-  color: rgba(20, 110, 246, 1);
+  color: var(--siteblue);
 }
 
 /* -- CSS for the work-display grid --*/
@@ -194,7 +196,7 @@ h3 {
 }
 
 .work-card {
-  background-color: rgba(224, 224, 224, 1);
+  background-color: var(--cardgrey);
   border-radius: 10px;
   padding: 2rem;
 }
@@ -220,8 +222,8 @@ h3 {
 }
 
 .work-tag {
-  background-color: black;
-  color: white;
+  background-color: var(--tagcolor);
+  color: var(--tagtext);
   border-radius: 4px;
   font-family: "JetBrainsMono", monospace;
   font-size: 0.825rem;
@@ -288,7 +290,6 @@ h3 {
 
 .skill-wrap {
   align-self: end;
-  /* border: black 1px solid;*/
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -350,7 +351,7 @@ h3 {
 /* CSS for the footer section */
 
 .blue-footer {
-  background-color: rgba(191, 207, 233, 1);
+  background-color: var(--sitecontrastblue);
 }
 
 .footer {
@@ -361,7 +362,7 @@ h3 {
 }
 
 .footer-links {
-  color: rgba(20, 110, 246, 1);
+  color: var(--siteblue);
 }
 
 .footer-links:link {
