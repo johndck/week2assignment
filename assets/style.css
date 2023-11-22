@@ -27,14 +27,6 @@
   font-family: "Manrope";
   src: url("../fonts/manrope/Manrope-Regular.ttf") format("truetype");
   font-weight: 400;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Manrope";
-  src: url("../fonts/manrope/Manrope-Regular.ttf") format("truetype");
-  font-weight: 400;
 }
 
 @font-face {
@@ -56,6 +48,7 @@
   --tagtext: white;
   --tagcolor: black;
   --sitecontrastblue: rgba(191, 207, 233, 1);
+  --latestIcon: pink;
 
   background: var(--sitebackground);
   font-size: 16px;
@@ -209,6 +202,7 @@ h3 {
   grid-template-columns: 1fr 1fr;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
+  position: relative;
 }
 
 .work-card {
@@ -220,7 +214,24 @@ h3 {
 .work-content {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 1rem;
+}
+
+#latest-application::after {
+  content: url(./img/rocket.svg);
+  font-family: "Manrope", sans-serif;
+  width: 4.5rem;
+  height: 4.5rem;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--sitecontrastblue);
+  top: -1.8rem;
+  left: 30rem;
 }
 
 .work-img {
@@ -251,6 +262,12 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 0.5rem;
   row-gap: 0.5rem;
+}
+
+#latest-application .work-img {
+  width: 105%;
+  align-self: center;
+  box-shadow: 0 8px 16px 0 rgba(255, 165, 0, 0.3);
 }
 
 /* set the right font to the work description paragraphs */
