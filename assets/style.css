@@ -95,7 +95,6 @@ h2,
 h3 {
   font-family: "Gambarino-Regular", serif;
   font-size: 2rem;
-  color: pink;
 }
 
 .container {
@@ -147,6 +146,23 @@ h3 {
 
 .hero .title-blue {
   color: var(--siteblue);
+}
+
+.nav-page-sections {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.navlinks {
+  color: var(--siteblue);
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.navlinks:link {
+  text-decoration: none;
 }
 
 .hero-cta {
