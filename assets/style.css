@@ -16,7 +16,6 @@
     url("../fonts/gambarino/Gambarino-Regular.woff") format("woff"),
     url("../fonts/gambarino/Gambarino-Regular.ttf") format("truetype");
   font-weight: 500;
-  font-display: swap;
   font-style: normal;
 }
 
@@ -33,7 +32,6 @@
   font-family: "JetBrainsMono";
   src: url("../fonts/jet/JetBrainsMono-Regular.ttf") format("truetype");
   font-weight: 500;
-  font-display: swap;
   font-style: regular;
 }
 
@@ -48,11 +46,11 @@
   --tagtext: white;
   --tagcolor: black;
   --sitecontrastblue: rgba(191, 207, 233, 1);
-  --latestIcon: pink;
 
   background: var(--sitebackground);
   font-size: 16px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* resetting everything in the browser */
@@ -83,11 +81,14 @@ h2,
   margin-top: 1.5rem;
 }
 
-/* check if this is being used */
-
 h3 {
   font-family: "Gambarino-Regular", serif;
   font-size: 2rem;
+}
+
+h4 {
+  font-family: "JetBrainsMono", serif;
+  font-size: 0.815rem;
 }
 
 .container {
@@ -137,7 +138,7 @@ h3 {
   left: 36rem;
 }
 
-.hero .title-blue {
+.title-blue {
   color: var(--siteblue);
 }
 
@@ -345,6 +346,10 @@ h3 {
   margin-right: 0.3125rem;
 }
 
+.work-img:hover {
+  scale: 1.02;
+}
+
 /* CSS for the mission section */
 
 .mission {
@@ -410,10 +415,6 @@ h3 {
 
 /* CSS for scaling the picture on hover */
 
-.work-img:hover {
-  scale: 1.02;
-}
-
 /* Media queries to make the site responsive */
 
 /* 1024 */
@@ -455,7 +456,7 @@ h3 {
   }
 
   .container {
-    max-width: 46.875rem;
+    max-width: 45rem;
   }
 
   .profile-pic {
@@ -503,7 +504,7 @@ h3 {
   }
 
   #latest-application::after {
-    left: 42rem;
+    left: 40rem;
   }
 
   .tag-container .work-tag {
@@ -582,7 +583,47 @@ h3 {
   }
 }
 
-/* 480 */
+/* between 769 & 1023 don't display the rocket icon */
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  #latest-application::after {
+    display: none;
+  }
+  /* Styles for devices between 600px and 900px */
+}
+
+@media screen and (min-width: 501px) and (max-width: 767px) {
+  #latest-application::after {
+    display: none;
+  }
+  /* Styles for devices between 600px and 900px */
+}
+
+@media screen and (min-width: 415px) and (max-width: 499px) {
+  #latest-application::after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 386px) and (max-width: 413px) {
+  #latest-application::after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 326px) and (max-width: 384px) {
+  #latest-application::after {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 324px) {
+  #latest-application::after {
+    display: none;
+  }
+}
+
+/* Styles for devices between 600px and 900px */
 
 @media screen and (max-width: 500px) {
   h1 {
