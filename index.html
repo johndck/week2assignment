@@ -1,120 +1,99 @@
 <!DOCTYPE html>
 
-<!-- Add in version release reference: & last updated on 21 Nov 2023 | 16:00 -->
+<!-- Add in version release reference: & last updated on 23 Nov 2023 | .03.6 -->
 
 <html lang="en">
   <head>
-
     <title>John Dick Portfolio Page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- OG card data-->
     <meta name="og:title" content="John Dick Portfolio Page">
     <meta name="og:description" content="This is a portfolio page for assignment no 2.">
     <meta name="og:image" content="https://johndck.github.io/week2assignment/">
    <meta name="og:url" content="https://johndck.github.io/week2assignment/">
-
-
-
+   <!--Favicon-->
     <link rel="icon" type="image/png" href="./assets/img/jdicon.png">
-  
+   <!-- Stylesheet for page-->
     <link rel="stylesheet" text="css" href="./assets/style.css" />
-
-    
   </head>
   <body>
-    <!-- Starting with the header which is introducing me!-->
-
+    <!-- === Header tag === -->
     <header>
       <div class="container">
         <div class="top-banner">
           <h1>John Dick</h1>
           <img
             src="./assets/img/johndick.jpg"
-            alt="picture of JD"
+            alt="John Dick portrait picture"
             class="profile-pic"
           />
         </div>
       </div>
     </header>
+    <!-- === Main tag === -->
     <main>
-      <!-- here is the container section-->
-      <!-- added the CTA outside because the main container is a flex which makes the button stretch (query this later)-->
-
+    <!-- === Hero section === -->
       <section class="container hero">
         <h2>Digital Product Buildr</h2>
         <h2 class="hero-icon"><span class="title-blue">From</span> Cambridge UK</h2>
         <p class="hero-text">
           This is a practice portfolio site for the <span class="title-blue">EDX front-end </span> bookcamp assignment. The inspiration came from the brief and the designer<span class="title-blue"> Ollie McMillan.</span> The page has re-created Ollie's commercial hompage.
         </p>
-
         <!-- Adding in a div for section navigation links within the page-->
-
         <div class="nav-page-sections">
           <a href="#portfolio" class="navlinks">my work</a>
           <a href="#sectionaboutme" class="navlinks">about me</a>
           <a href="#mission" class="navlinks">the mission</a>
           <a href="#contactfooter"class="navlinks">contact</a>
         </div>
-
-
-
       </section>
       <div class="container hero-cta">
         <a href="#" class="contact-btn">Contact</a>
       </div>
-
-      <!-- end of hero section-->
-
-      <!-- the work section -->
-
+    
+    
+      <!-- === Work section === -->
       <section class="container work">
         <!-- 2 x 2 grid section of content-->
-
         <h2>My Work</h2>
         <!-- set up the grid container work-display-->
         <div class="work-display">
           <!-- grid items denoted as work-card-->
-
           <div class="work-card" id="portfolio">
             <!--large grey card-->
-            <!-- make it latest assignment & style accordingly.-->
-
             <div class="work-content" id="latest-application">
               <!--Img + content -->
               <a href="https://www.createfuture.com/planvcare" class="image-lnk" target="_blank"><img
                 src="./assets/img/planv.jpg"
-                alt="image"
+                alt="plan v care landing page"
                 class="work-img"
               /></a>
               <div class="work-explanation">
                 <!-- holding container for work description-->
                 <h3>Latest: Plan V Care</h3>
                 <div class="tag-container">
-                  <p class="work-tag">Proposition Development</p>
                   <p class="work-tag">Design</p>
+                  <p class="work-tag">Proposition development</p>
                   <p class="work-tag">Build</p>
                   <p class="work-tag">Go to market</p>
                 </div>
-
                 <p class="work-description">
                   In 8 weeks we designed and launched this innovative cancer insurance product into the UK market.
                 </p>
               </div>
             </div>
           </div>
-
           <!-- next work-card -->
-
           <div class="work-card">
             <!--large grey card-->
             <div class="work-content">
               <!--Img + content -->
               <a href="https://www.createfuture.com/money-for-them" target="_blank" class="image-lnk"><img
                 src="./assets/img/564x336-mft.jpg"
-                alt="image"
+                alt="money for them landing page"
                 class="work-img"
               /></a>
-              
               <div class="work-explanation">
                 <!-- holding container for work description-->
                 <h3>Money For Them </h3>
@@ -122,24 +101,21 @@
                   <p class="work-tag">Innovation Test</p>
                   <p class="work-tag">Pre-seed fund</p>
                 </div>
-
                 <p class="work-description">
                   Our goal was to improve digital conversion with an innovating digital life insurance proposition.
                 </p>
               </div>
             </div>
           </div>
-        
           <!-- next work-card -->
-
           <div class="work-card">
             <!--large grey card-->
             <div class="work-content">
               <!--Img + content -->
               <img
-                src="./assets/img/564x336-mft.jpg"
-                alt="image"
-                class="work-img"
+                src="./assets/img/macbookpro.jpg"
+                alt="screen shot of new macbook"
+                class="work-img" 
               />
               <div class="work-explanation">
                 <!-- holding container for work description-->
@@ -155,16 +131,14 @@
               </div>
             </div>
           </div>
-
           <!-- next work-card -->
-
           <div class="work-card">
             <!--large grey card-->
             <div class="work-content">
               <!--Img + content -->
               <img
-                src="./assets/img/564x336-mft.jpg"
-                alt="image"
+                src="./assets/img/iphonehhold.jpg"
+                alt="iphone 13 being held in hand"
                 class="work-img"
               />
               <div class="work-explanation">
@@ -181,22 +155,21 @@
               </div>
             </div>
           </div>
-
-
-
         </div>
       </section>
-
-      <!-- the about me section -->
-
+      
+      
+      
+      
+      
+      
+      <!-- === About section === -->
       <section class="container about-me">
         <div class="about-me-container">
-
           <!-- creates a 2x1 grid to hold 2 grid items
           The 2 grid items are about-me-wrap + skills-wrap.
           -->
           <!-- grid item 1-->
-
           <div class="about-me-wrap" id="sectionaboutme">
             <h2>About me</h2>
             <p class="about-summary">There is no short cut to growing a business. It takes extreme levels of energy. The market decides if you are good enough.</p>
@@ -205,9 +178,7 @@
             <p class="about-detail">Pay attention to the detail and know what you are doing and where you are making assumptions. </p>
 
           </div>
-
           <!-- grid item 2-->
-
           <div class="skill-wrap">
             <h3>Skills</h3>
             <div class="skills-tags">
@@ -269,13 +240,11 @@
 
           </div>
         </div>
-
-
       </section>
 
+      <!-- === Mission section === -->
 
       <section class="container mission">
-
         <!-- Set up the grid to hold this section -->
         <div class="mission-container" id="mission">
         <!-- Will contain 2 sections-->
@@ -289,12 +258,13 @@
         </div>
         <!--Item 2-->
         <div class="mission-visual">
-          <img src="./assets/img/work-holder.png" alt="image" class="mission-img"/>
+          <img src="./assets/img/work-holder.png" alt="money for them landing page in ipad" class="mission-img"/>
         </div>
         </div>
       </section>
-
     </main>
+
+    <!-- === Footer section === -->
 
     <footer class="blue-footer" id="contactfooter">
       <div class="container footer">
@@ -302,17 +272,12 @@
       <a href="https://www.linkedin.com/in/johntdick/" class="footer-links" title="My linkedin profile">Linkedin</a>
       <a href="#" class="footer-links" title="Twitter account">Twitter</a>
       <a href="#" class="footer-links" title="johnturnerdick@gmail.com">Email</a>
-      <a href="#" class="footer-links">Privacy</a>
       </div>
       <!-- Add version control to the footer-->
-
       <div>
-        <p class="container version">v 0.1.01.03.6</p>
+        <p class="container version">v 0.1.01.03.7</p>
         <p class="container version">Design inspired by Ollie McMillan.</p>
       </div>
-      
     </footer>
-
-
   </body>
 </html>
