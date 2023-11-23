@@ -8,13 +8,11 @@ The HTML and CSS code is available to everyone under the standard MIT License.
 
 The application creates this one portfolio landing page:
 
-![Portfolio Landing Page](portfolio-landing.jpg)
+![Portfolio Landing Page](portfolio-landing-page.jpg)
 
 The inspiration for the porfolio page came from Ollie Marshall:
 
 ![Ollie Marshall screenshot](desktop-inspiration.jpg)
-
-![Ollie Marshall screenshot](mobile-inspiration.jpg)
 
 To note: The intent of this assignment was to build, not design. This is my build.
 
