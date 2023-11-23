@@ -36,11 +36,15 @@ Critical requirements:
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./images/01-css-challenge-demo.gif)
+![portfolio demo](./assets/01-css-challenge-demo.gif)
 
 Feel free to use your own colors and images.
 
 \*\* As noted during the class - design, colours and images are all our decision, hence why I recreated another design.
+
+This is the design that I tried to replicate for this challenge:
+
+![Inspired design](desktop-inspiration.jpg)
 
 ### Technical Acceptance Criteria: 40%
 
