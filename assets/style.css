@@ -99,8 +99,8 @@ h4 {
 .container {
   max-width: 68.75rem;
   margin: 0 auto;
-  padding: 0 0.6rem 0 0.6rem;
-  border: black 1px solid;
+  padding: 0 0.8rem 0 0.8rem;
+  /*border: black 1px solid;*/
 }
 
 .top-banner {
@@ -131,8 +131,8 @@ h4 {
 
 .hero-icon::after {
   content: "";
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   background-image: url(./img/code.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -177,7 +177,7 @@ h4 {
   font-family: "Manrope", sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
-  padding: 12px 32px 12px 32px;
+  padding: 0.75rem 2rem 0.75rem 2rem;
   border-radius: 20px;
   cursor: pointer;
   text-decoration: none;
@@ -187,7 +187,7 @@ h4 {
 .contact-btn:hover {
   background-color: var(--btnHover);
   color: white;
-  padding: 12px 32px 12px 32px;
+  padding: 0.75rem 2rem 0.75rem 2rem;
   border-radius: 12px;
 }
 
@@ -233,6 +233,8 @@ h4 {
   border-radius: 5px;
   transition: scale 1s;
 }
+
+/* Added the transformation and transition duration to work-img */
 
 .work-img:hover {
   scale: 1.02;
@@ -353,7 +355,7 @@ h4 {
 .skills-list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.625rem;
 }
 
 /* Each skills line will be converted into flex to get the items into a row. */
@@ -483,15 +485,6 @@ h4 {
   }
 
   .hero-icon::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    background-image: url(./img/code.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    position: absolute;
     top: -1.3rem;
     left: 24rem;
   }
@@ -595,7 +588,7 @@ h4 {
   }
 }
 
-/* To handle the rocket item icon at different widths here are a set of media queries that set display none across viewpoints */
+/* To handle the rocket item icon at different widths here are a set of media queries that set display none between the viewpoints */
 
 @media screen and (min-width: 769px) and (max-width: 1023px) {
   #latest-application::after {
@@ -671,19 +664,20 @@ h4 {
   #latest-application::after {
     left: 25rem;
   }
+
+  .footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
 }
+
+/* Styles for iphone 11 - 414px */
 
 @media screen and (max-width: 414px) {
   .hero-icon::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-image: url(./img/code.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    position: absolute;
     top: 3rem;
     left: 21.8rem;
   }
@@ -730,15 +724,6 @@ h4 {
   }
 
   .hero-icon::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-image: url(./img/code.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    position: absolute;
     top: 3rem;
     left: 19rem;
   }
@@ -750,7 +735,17 @@ h4 {
   #latest-application::after {
     left: 18rem;
   }
+
+  .footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
 }
+
+/* CSS for really small screens */
 
 @media screen and (max-width: 325px) {
   h1 {
@@ -763,17 +758,10 @@ h4 {
   }
 
   .hero-icon::after {
-    content: "";
-    width: 30px;
-    height: 30px;
-    background-image: url(./img/code.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: inline-block;
-    position: absolute;
-    top: 3rem;
-    left: 17.8rem;
+    top: 4.5rem;
+    left: 18rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .profile-pic {
@@ -812,14 +800,6 @@ h4 {
 
   .skills-line .work-tag {
     font-size: 0.65rem;
-  }
-
-  .footer {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
   }
 
   #latest-application::after {

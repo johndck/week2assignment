@@ -34,8 +34,6 @@ Critical requirements:
 
 * yes the layout is responsive - done ✔︎
 
-## Mock-Up
-
 The following animation shows the web application's appearance and functionality:
 
 ![portfolio demo](./images/01-css-challenge-demo.gif)
@@ -43,10 +41,6 @@ The following animation shows the web application's appearance and functionality
 Feel free to use your own colors and images.
 
 \*\* As noted during the class - design, colours and images are all our decision, hence why I recreated another design.
-
-## Grading Requirements
-
-This challenge is graded based on the following criteria:
 
 ### Technical Acceptance Criteria: 40%
 
