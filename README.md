@@ -28,4 +28,6 @@ You can view the deployed application here:
 
 https://johndck.github.io/week2assignment/
 
-The deployed version of the site is: .03.7
+The deployed version of the site is: .03.7.
+
+Testing for access - 26 Nov.
