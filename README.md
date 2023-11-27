@@ -31,3 +31,4 @@ https://johndck.github.io/week2assignment/
 The deployed version of the site is: .03.7.
 
 Testing for access - 26 Nov.
+Testing access again on the 27th following access token expiring. JD
